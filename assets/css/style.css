@@ -49,12 +49,35 @@ header nav ul a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 /*Hero style ends*/
 
+/*Bio begins*/
+.bio-segment {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+}
+.bio-segment p {
+    text-align: center;
+    font-size: 25px;
+}
+.bio-title {
+    font-size: 48px;
+    text-align: left;
+    padding: 40px;
+    margin: 0 40px 40px 0;
+    border-right: 2px dotted var(--primary-color);
+    height: 100%;
+}
+/*Bio ends*/
+
 /*Work style begins*/
-.flex-row{
-    display: inline-flex;
+.flex-row {
+    display: flex;
 }
 .work-cards {
     display: flex;
@@ -63,18 +86,17 @@ header nav ul a {
     width: 100%;
     margin: 0 auto;
 }
-.segment-title {
+.work-title {
     font-size: 48px;
     text-align: left;
     padding: 40px;
     margin: 0 40px 40px 0;
-}
-.title-border{
     border-right: 2px dotted var(--primary-color);
+    height: 200%;
 }
 .card {
     display: inline-block;
-    border: 5px solid var(--primary-color);
+    border: 10px solid var(--primary-color);
     margin: 10px;
 }
 .card img {
