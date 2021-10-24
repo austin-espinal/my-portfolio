@@ -42,7 +42,7 @@ header nav ul a {
 
 /*Hero style begins*/
 .hero {
-    height: 500px;
+    height: 400px;
     width: 100%;
     background-image: url("../images/mahogany-hero.jpg");
     background-size: cover;
@@ -52,6 +52,42 @@ header nav ul a {
 }
 /*Hero style ends*/
 
+/*Work style begins*/
+.flex-row{
+    display: inline-flex;
+}
+.work-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.segment-title {
+    font-size: 48px;
+    text-align: left;
+    padding: 40px;
+    margin: 0 40px 40px 0;
+}
+.title-border{
+    border-right: 2px dotted var(--primary-color);
+}
+.card {
+    display: inline-block;
+    border: 5px solid var(--primary-color);
+    margin: 10px;
+}
+.card img {
+    max-width: 600px;
+    height: 600px;
+}
+.card h3 {
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+/*Work style ends*/
+
 /*Footer style begins*/
 footer {
     background-color: var(--primary-color);
@@ -60,6 +96,7 @@ footer {
     flex-wrap: wrap;
     color: var(--secondary-color);
     width: 100%;
+    margin-top: 40px;
 }
 footer h2 {
     font-size: 35px;
