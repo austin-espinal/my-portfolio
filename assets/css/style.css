@@ -1,5 +1,5 @@
 *:root {
-    --primary-color: #c02600;
+    --primary-color: #8b0000;
     --secondary-color: #E5DBCB;
 }
   * {
@@ -42,7 +42,9 @@ header nav ul a {
 
 /*Hero style begins*/
 .hero {
-    background-image: url(../images/mahogany-hero.jpg);
+    height: 500px;
+    width: 100%;
+    background-image: url("../images/mahogany-hero.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -64,6 +66,7 @@ footer h2 {
 }
 footer address {
     padding: 10px;
+    font-size: 20px;
 }
 footer a {
     color: var(--secondary-color);
