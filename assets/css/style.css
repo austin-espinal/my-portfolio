@@ -18,6 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    top: 0;
 }
 header h1 {
     font-size: 45px;
@@ -43,22 +44,23 @@ header nav ul a {
 /*Hero style begins*/
 .hero {
     height: 400px;
-    width: 100%;
     background-image: url("../images/mahogany-hero.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    flex-basis: 100%;
 }
 /*Hero style ends*/
 
 /*Bio begins*/
 .bio-segment {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    height: auto;
     margin: 0;
 }
 .bio-segment p {
@@ -71,11 +73,19 @@ header nav ul a {
     padding: 40px;
     margin: 0 40px 40px 0;
     border-right: 2px dotted var(--primary-color);
-    height: 100%;
+}
+.primary-border {
+    padding-right: 5px;
+}
+.bio-text {
+    display: flex;
 }
 /*Bio ends*/
 
 /*Work style begins*/
+.work-segment {
+    display: flex;
+}
 .flex-row {
     display: flex;
 }
@@ -90,18 +100,22 @@ header nav ul a {
     font-size: 48px;
     text-align: left;
     padding: 40px;
-    margin: 0 40px 40px 0;
+    margin-left: 65px;
     border-right: 2px dotted var(--primary-color);
-    height: 200%;
+    height: auto;
 }
 .card {
     display: inline-block;
     border: 10px solid var(--primary-color);
     margin: 10px;
+    flex-basis: 5%;
 }
 .card img {
-    max-width: 600px;
-    height: 600px;
+    height: 300px;
+    width: 500px;
+}
+.first-card {
+    flex: 2;
 }
 .card h3 {
     text-align: center;
