@@ -13,7 +13,7 @@ body {
 }
 
 /*Header style begins*/
-  header {
+header {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -106,14 +106,13 @@ header nav ul a {
 .card {
     display: inline-block;
     margin: 10px;
-    max-width: 500px;
+    height: 500px;
+    width: 600px;
 }
 .card img {
-    max-width: 500px;
+    height: auto;
+    width: 600px;
     border: 10px solid var(--primary-color);
-}
-.first-card img h3 {
-    flex: 1;
 }
 .card h3 {
     text-align: center;
