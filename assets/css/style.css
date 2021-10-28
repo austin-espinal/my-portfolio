@@ -93,7 +93,6 @@ header nav ul a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
     margin: 0 auto;
 }
 .work-title {
@@ -106,16 +105,15 @@ header nav ul a {
 }
 .card {
     display: inline-block;
-    border: 10px solid var(--primary-color);
     margin: 10px;
-    flex-basis: 5%;
+    max-width: 500px;
 }
 .card img {
-    height: 300px;
-    width: 500px;
+    max-width: 500px;
+    border: 10px solid var(--primary-color);
 }
-.first-card {
-    flex: 2;
+.first-card img h3 {
+    flex: 1;
 }
 .card h3 {
     text-align: center;
