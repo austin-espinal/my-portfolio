@@ -21,7 +21,7 @@ header {
     top: 0;
 }
 header h1 {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: bold;
 }
 header a {
@@ -37,20 +37,23 @@ header nav ul {
 }
 header nav ul a {
     padding: 20px;
-    font-size: 35px;
+    font-size: 40px;
 }
 /*Header style ends*/
 
 /*Hero style begins*/
 .hero {
-    height: 400px;
     background-image: url("../images/mahogany-hero.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    flex-basis: 100%;
+    width: 100vw;
+    height: 20vw;
 }
 /*Hero style ends*/
 
@@ -106,15 +109,22 @@ header nav ul a {
 .card {
     display: inline-block;
     margin: 10px;
-    height: 500px;
-    width: 600px;
 }
 .card img {
-    height: auto;
-    width: 600px;
+    max-width: 30vw;
     border: 10px solid var(--primary-color);
 }
-.card h3 {
+.first-card {
+    display: inline-block;
+    margin: 10px;
+}
+.first-card img {
+    max-width: 70vw;
+    height: auto;
+    border: 10px solid var(--primary-color);
+
+}
+.work-cards h3 {
     text-align: center;
     color: var(--secondary-color);
     background-color: var(--primary-color);
@@ -132,11 +142,12 @@ footer {
     margin-top: 40px;
 }
 footer h2 {
-    font-size: 35px;
+    font-size: 45px;
+    font-weight: bold;
 }
 footer address {
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 footer a {
     color: var(--secondary-color);
