@@ -70,6 +70,9 @@ header nav ul a {
     text-align: center;
     font-size: 25px;
 }
+.bio-segment img {
+    max-width: 15vw;
+}
 .bio-title {
     font-size: 48px;
     text-align: left;
@@ -153,3 +156,18 @@ footer a {
     color: var(--secondary-color);
 }
 /*Footer style ends*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS
+@media screen and (max-width: 980px) {
+
+  } */
+
+  /* MEDIA QUERY FOR TABLETS
+  @media screen and (max-width: 768px) {
+
+  } */
+  
+  /* MEDIA QUERY FOR MOBILE PHONES/Devices
+  @media screen and (max-width: 575px) {
+
+  } */
